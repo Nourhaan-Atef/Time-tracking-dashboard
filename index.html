@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+    <!-- Bootstrap Links  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- External Style -->
+    <link rel="stylesheet" href="main.css" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 50px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="flex-center flex-column">
+    <!-- Heading -->
+    <h1>Time Tracking App</h1>
+    <main class="container challenge flex-center">
+      <section
+        class="person-details flex-center justify-content-start flex-column col-lg-3 col-8"
+      >
+        <div class="my-detail">
+          <img src="images/image-jeremy.png" alt="My-Image" class=" " />
+          <div class="des">
+            <p>Report for</p>
+            <h2 class=""><span>Jeremy </span> <span>Robson</span></h2>
+          </div>
+        </div>
+        <div class="periods">
+          <p id="daily" >Daily</p>
+          <p id="weekly" >Weekly</p>
+          <p id="monthly">Monthly</p>
+        </div>
+      </section>
+      <!-- Time Track -->
+      <section class="time-track flex-center flex-wrap">
+        <!-- Work -->
+        <div class="cards work col-lg-3 col-8">
+          <div class="image">
+            <img src="images/icon-work.svg" alt="" class="" />
+          </div>
+          <div class="period-details">
+            <div class="title">
+              <p>Work</p>
+              <img src="images/icon-ellipsis.svg" alt="" />
+            </div>
+            <div class="content">
+              <h3 id="work-hours">32hrs</h3>
+              <p>last week - 36hrs</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Play -->
+
+        <div class="cards play col-lg-3 col-8">
+          <div class="image">
+            <img src="images/icon-play.svg" alt="" class="" />
+          </div>
+          <div class="period-details">
+            <div class="title">
+              <p>Play</p>
+              <img src="images/icon-ellipsis.svg" alt="" />
+            </div>
+            <div class="content">
+              <h3 id="play-hours">10hrs</h3>
+              <p>last week - 8hrs</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Study -->
+
+        <div class="cards study col-lg-3 col-8">
+          <div class="image">
+            <img src="images/icon-study.svg" alt="" class="" />
+          </div>
+          <div class="period-details">
+            <div class="title">
+              <p>Study</p>
+              <img src="images/icon-ellipsis.svg" alt="" />
+            </div>
+            <div class="content">
+              <h3 id="study-hours">4hrs</h3>
+              <p>last week - 7hrs</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Excercise -->
+        <div class="cards excercise col-lg-3 col-8">
+          <div class="image">
+            <img src="images/icon-exercise.svg" alt="" class="" />
+          </div>
+          <div class="period-details">
+            <div class="title">
+              <p>Excercise</p>
+              <img src="images/icon-ellipsis.svg" alt="" />
+            </div>
+            <div class="content">
+              <h3 id="excercise-hours">4hrs</h3>
+              <p>last week - 5hrs</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social -->
+
+        <div class="cards social col-lg-3 col-8">
+          <div class="image">
+            <img src="images/icon-social.svg" alt="" class="" />
+          </div>
+          <div class="period-details">
+            <div class="title">
+              <p>Social</p>
+              <img src="images/icon-ellipsis.svg" alt="" />
+            </div>
+            <div class="content">
+              <h3 id="social-hours">5hrs</h3>
+              <p>last week - 10hrs</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Self Care -->
+        <div class="cards self-care col-lg-3 col-8">
+          <div class="image">
+            <img src="images/icon-self-care.svg" alt="" class="" />
+          </div>
+          <div class="period-details">
+            <div class="title">
+              <p>Self Care</p>
+              <img src="images/icon-ellipsis.svg" alt="" />
+            </div>
+            <div class="content">
+              <h3 id="self-care-hours">2hrs</h3>
+              <p>last week - 2hrs</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Nourhan Atef</a>,
+        <br />
+        <a href="https://www.linkedin.com/in/nourhan-atef-54630b1b1/"
+          >My linkedIn Account </a
+        >.
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

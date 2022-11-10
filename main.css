@@ -1,0 +1,199 @@
+:root {
+  --card-color: hsl(235, 46%, 20%);
+  --main-font: "Rubik", sans-serif;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-color: hsl(226, 43%, 10%);
+  margin-top: 100px;
+}
+/* Personal Detalis Section */
+
+h1 {
+  color: hsl(235, 45%, 61%);
+  margin-bottom: 50px;
+}
+.person-details {
+  background-color: var(--card-color);
+  border-radius: 10px;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.my-detail {
+  width: 100%;
+  border-radius: 10px;
+  background: hsl(246, 80%, 60%);
+  padding: 30px 70px;
+  padding-left: 20px;
+  font-family: var(--main-font);
+}
+.my-detail img {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.my-detail p {
+  margin: 0;
+  color: hsl(236, 100%, 87%);
+  font-size: 12px;
+}
+.my-detail h2 {
+  font-weight: 100;
+  font-size: 30px;
+  padding-bottom: 40px;
+}
+.my-detail .des h2 span {
+  display: block;
+}
+
+.periods {
+  width: 100%;
+  padding: 20px 70px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.periods p {
+  color: hsl(236, 100%, 87%);
+  transition: 0.5s;
+}
+
+.periods p:hover,
+.periods .week {
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Time Track */
+.cards {
+  margin-right: 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  color: #fff;
+  font-family: var(--main-font);
+}
+.work {
+  background: hsl(15, 100%, 70%);
+}
+.play {
+  background: hsl(195, 74%, 62%);
+}
+.study {
+  background: hsl(348, 100%, 68%);
+}
+.excercise {
+  background: hsl(145, 58%, 55%);
+}
+.social {
+  background: hsl(264, 64%, 52%);
+}
+.self-care {
+  background: hsl(43, 84%, 65%);
+}
+.image {
+  display: flex;
+  justify-content: end;
+  z-index: -1;
+  padding: 0 10px;
+}
+.image img {
+  width: 40px;
+  height: 40px;
+}
+.title img {
+    opacity: 0.5;
+    transition: 0.5s;
+  }
+  .title img:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+.period-details {
+  background: var(--card-color);
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.5s;
+}
+.period-details:hover{
+background-color: hsl(246, 80%, 60%);
+cursor: pointer;
+}
+.period-details .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.period-details .title p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+.period-details .content h3 {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.period-details .content p {
+  margin: 0;
+  font-size: 13px;
+  color: hsl(236, 100%, 87%);
+}
+
+/* Media Queries */
+@media (max-width: 990px) {
+  .challenge {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .person-details {
+    display: flex;
+    flex-direction: row;
+  }
+  .my-detail {
+    padding: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .my-detail .des {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .my-detail .des h2 span {
+    display: inline-block;
+  }
+  .my-detail .des h2 {
+    padding-bottom: 0px;
+  }
+
+  .periods {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 20px;
+  }
+
+  .periods p {
+    margin: 0;
+  }
+
+  .period-details .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
